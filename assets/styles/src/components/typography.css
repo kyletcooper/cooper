@@ -1,0 +1,74 @@
+.prose
+	:where(.prose > :first-child):not(
+		:where([class~="not-prose"], [class~="not-prose"] *)
+	) {
+	margin-top: 0 !important;
+}
+
+.h0,
+.has-h-0-font-size,
+.has-h0-font-size {
+	@apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 font-medium !leading-tight;
+}
+
+.h1,
+.has-h-1-font-size,
+.has-h1-font-size,
+:where(h1.wp-block-heading) {
+	@apply text-3xl md:text-4xl lg:text-5xl font-medium mb-6 !leading-tight;
+}
+
+.h2,
+.has-h-2-font-size,
+.has-h2-font-size,
+:where(h2.wp-block-heading) {
+	@apply text-2xl md:text-3xl lg:text-4xl font-medium mb-4 !leading-tight;
+}
+
+.h3,
+.has-h-3-font-size,
+.has-h3-font-size,
+:where(h3.wp-block-heading) {
+	@apply text-xl md:text-2xl lg:text-3xl font-medium mb-3 !leading-tight;
+}
+
+.h4,
+.has-h-4-font-size,
+.has-h4-font-size,
+:where(h4.wp-block-heading) {
+	@apply text-lg md:text-xl lg:text-2xl font-medium mb-2 !leading-tight;
+}
+
+.h5,
+.has-h-5-font-size,
+.has-h5-font-size,
+:where(h5.wp-block-heading) {
+	@apply text-base md:text-lg lg:text-xl font-medium mb-1 !leading-tight;
+}
+
+.has-h6-font-size,
+.has-h-6-font-size,
+:where(h6.wp-block-heading) {
+	@apply text-base !leading-tight font-medium;
+}
+
+.wp-block-heading:only-child {
+	@apply !mb-0;
+}
+
+.has-base-font-size {
+	@apply text-base font-normal;
+}
+
+.has-small-font-size {
+	@apply text-xs font-normal text-surface-600;
+}
+
+.has-large-font-size {
+	font-size: 1.333rem;
+	font-weight: 500;
+}
+
+.has-text-align-left {
+	text-align: left !important;
+}

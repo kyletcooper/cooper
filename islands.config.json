@@ -1,0 +1,9 @@
+{
+	"islands": {
+		"Navigation": "./assets/scripts/src/islands/navigation/index.tsx"
+	},
+	"output": "./assets/scripts/dist/",
+	"define": {
+		"__ASSETS_PATH__": "/wp-content/themes/cooper/assets"
+	}
+}

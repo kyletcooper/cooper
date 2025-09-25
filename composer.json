@@ -1,0 +1,29 @@
+{
+	"name": "wrd/cooper",
+	"description": "A WordPress theme.",
+	"type": "project",
+	"authors": [],
+	"minimum-stability": "dev",
+	"require": {
+		"wrd/wp-blocks": "dev-main",
+		"wpengine/advanced-custom-fields-pro": "^6.4"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://connect.advancedcustomfields.com"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	},
+	"extra": {
+		"installer-paths": {
+			"plugins/{$name}/": [
+				"type:wordpress-plugin"
+			]
+		}
+	}
+}

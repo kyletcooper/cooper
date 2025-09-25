@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+	--font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+
+	--color-*: initial;
+
+	--color-transparent: transparent;
+	--color-current: currentColor;
+
+	--color-surface-0: white;
+	--color-surface-50: oklch(0.985 0.001 106.423);
+	--color-surface-100: oklch(0.97 0.001 106.424);
+	--color-surface-200: oklch(0.923 0.003 48.717);
+	--color-surface-300: oklch(0.869 0.005 56.366);
+	--color-surface-400: oklch(0.709 0.01 56.259);
+	--color-surface-500: oklch(0.553 0.013 58.071);
+	--color-surface-600: oklch(0.444 0.011 73.639);
+	--color-surface-700: oklch(0.374 0.01 67.558);
+	--color-surface-800: oklch(0.268 0.007 34.298);
+	--color-surface-900: oklch(0.216 0.006 56.043);
+	--color-surface-950: oklch(0.147 0.004 49.25);
+
+	--color-primary-50: #e6eff7;
+	--color-primary-100: #b3cee6;
+	--color-primary-200: #80aed6;
+	--color-primary-300: #4d8ec5;
+	--color-primary-400: #1a6db4;
+	--color-primary-500: #005dac;
+	--color-primary-600: #004a8a;
+	--color-primary-700: #003867;
+	--color-primary-800: #002545;
+	--color-primary-900: #001322;
+	--color-primary-950: #000911;
+}
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+@import "./components/button.css";
+@import "./components/editor.css";
+@import "./components/typography.css";

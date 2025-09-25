@@ -1,0 +1,35 @@
+{
+	"type": "module",
+	"name": "@wrd/cooper",
+	"version": "1.0.0",
+	"description": "A WordPress theme.",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run build:styles && npm run build:scripts",
+		"build:styles": "npx @tailwindcss/cli -i ./assets/styles/src/index.css -o ./assets/styles/dist/bundle.css --minify",
+		"watch:styles": "npx @tailwindcss/cli -i ./assets/styles/src/index.css -o ./assets/styles/dist/bundle.css --watch",
+		"build:scripts": "npx react-islands build",
+		"watch:scripts": "npx react-islands watch",
+		"start": "wp-env start",
+		"stop": "wp-env stop",
+		"export": "npm run build && npm run export:zip",
+		"export:zip": "npx package-theme"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.1.8",
+		"@tailwindcss/typography": "^0.5.16",
+		"@types/react": "^19.1.7",
+		"@types/react-dom": "^19.1.6",
+		"@wrdagency/react-islands": "^2.1.6",
+		"@wrdagency/tailwind-animate": "^1.0.4",
+		"@wrdagency/wp-scaffold": "^1.2.11",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"tailwindcss": "^4.1.8"
+	}
+}

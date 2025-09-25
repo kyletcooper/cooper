@@ -1,0 +1,9 @@
+node_modules/
+assets/scripts/dist/
+assets/styles/dist/
+.vscode/
+plugins/
+vendor/
+*.zip
+auth.json
+.rollup.cache

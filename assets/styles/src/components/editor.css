@@ -1,0 +1,22 @@
+.editor-styles-wrapper {
+	@apply font-sans;
+}
+
+.editor-visual-editor__post-title-wrapper {
+	@apply container;
+	text-align: left;
+	font-size: 1.25rem;
+	font-weight: 300;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid var(--colors-surface-700);
+}
+
+.block-editor-block-list__layout.is-root-container
+	> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	max-width: 100% !important;
+}
+
+.editor-visual-editor__post-title-wrapper
+	> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	max-width: 100% !important;
+}
