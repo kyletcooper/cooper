@@ -2,7 +2,7 @@
 /**
  * Hooks/functions for managing the theme's assets.
  *
- * @package {{PACKAGE_NAME}}
+ * @package cooper
  */
 
 /**
@@ -19,9 +19,11 @@ function register_theme_assets(): void {
 	wp_register_style( 'theme-bundle', get_template_directory_uri() . '/assets/styles/dist/bundle.css', array(), $theme_version, 'all' );
 
 	/**
-	 * Main front-end bundle for JS
+	 * Common requirements for Islands.
+	 *
+	 * Islands are always enqueued by the the_island function and this is their dependency.
 	 */
-	wp_register_script( 'theme-bundle', get_template_directory_uri() . '/assets/scripts/dist/bundle.js', array(), $theme_version, array( 'strategy' => 'defer' ) );
+	wp_register_script( 'islands', get_template_directory_uri() . '/assets/scripts/dist/common.js', array(), $theme_version, array( 'strategy' => 'defer' ) );
 }
 add_action( 'wp_enqueue_scripts', 'register_theme_assets', 9 );
 add_action( 'admin_enqueue_scripts', 'register_theme_assets', 9 );

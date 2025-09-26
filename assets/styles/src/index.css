@@ -2,8 +2,11 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-	--font-sans: "work-sans", ui-sans-serif, system-ui, sans-serif;
-	--font-display: "nanum-myeongjo", sans-serif;
+	--font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+	--font-display: "Nanum Myeongjo", "Palatino", "Georgia", serif;
+
+	--breakpoint-xl: initial;
+	--breakpoint-2xl: initial;
 
 	--color-*: initial;
 

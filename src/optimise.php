@@ -2,7 +2,7 @@
 /**
  * Hooks/functions for optimising WordPress' output.
  *
- * @package {{PACKAGE_NAME}}
+ * @package cooper
  */
 
 /**

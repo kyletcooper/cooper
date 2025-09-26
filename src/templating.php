@@ -97,4 +97,30 @@ function the_ssg( string $name, ?array $props = null, array $attrs = array() ): 
 	include $file;
 
 	echo '</div>';
+
+	// Enqueue client-side script.
+	wp_enqueue_script( "islands-$name", get_template_directory_uri() . "/assets/scripts/dist/$name/client.js", array( 'islands' ), get_theme_version(), array( 'strategy' => 'defer' ) );
+}
+
+/**
+ * Get the archive label for a post type.
+ *
+ * @param string $post_type The post type.
+ *
+ * @return string
+ */
+function get_post_type_archive_label( string $post_type ): string {
+	$obj = get_post_type_object( $post_type );
+
+	if ( ! $obj ) {
+		return __( 'Back', 'cooper' );
+	}
+
+	$labels = $obj->labels;
+
+	if ( property_exists( $labels, 'name' ) ) {
+		return $labels->name;
+	}
+
+	return $obj->label;
 }

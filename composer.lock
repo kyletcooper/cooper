@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0fab5f855de2b0d32a0d8fb163df991",
+    "content-hash": "2a519b6181e9f2686f5028c1a1d03b8a",
     "packages": [
         {
             "name": "adhocore/cli",
@@ -293,13 +293,53 @@
                 "source": "https://github.com/kyletcooper/wp-blocks/tree/main"
             },
             "time": "2025-08-24T19:47:56+00:00"
+        },
+        {
+            "name": "wrd/wp-navigate",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kyletcooper/wp-navigate.git",
+                "reference": "f801289dff3f888e9e07ddd10deb0e3703222cf0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kyletcooper/wp-navigate/zipball/f801289dff3f888e9e07ddd10deb0e3703222cf0",
+                "reference": "f801289dff3f888e9e07ddd10deb0e3703222cf0",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/class-menuitem.php",
+                    "src/breadcrumbs.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "wrd-sodapixel",
+                    "email": "dev@sodapixel.com"
+                }
+            ],
+            "description": "Utilities for working with navigation, menu items & breadcrumbs in WordPress.",
+            "support": {
+                "issues": "https://github.com/kyletcooper/wp-navigate/issues",
+                "source": "https://github.com/kyletcooper/wp-navigate/tree/main"
+            },
+            "time": "2025-09-11T08:51:43+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "wrd/wp-blocks": 20
+        "wrd/wp-blocks": 20,
+        "wrd/wp-navigate": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

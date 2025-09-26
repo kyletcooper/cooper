@@ -2,7 +2,7 @@
 /**
  * Entrypoint for theme.
  *
- * @package {{PACKAGE_NAME}}
+ * @package cooper
  */
 
 use function wrd\wp_blocks\core\get_all_theme_block_names;

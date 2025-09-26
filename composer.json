@@ -6,7 +6,8 @@
 	"minimum-stability": "dev",
 	"require": {
 		"wrd/wp-blocks": "dev-main",
-		"wpengine/advanced-custom-fields-pro": "^6.4"
+		"wpengine/advanced-custom-fields-pro": "^6.4",
+		"wrd/wp-navigate": "dev-main"
 	},
 	"repositories": [
 		{
