@@ -8,14 +8,14 @@
 .h0,
 .has-h-0-font-size,
 .has-h0-font-size {
-	@apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 font-medium !leading-tight;
+	@apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 font-display font-bold !leading-tight;
 }
 
 .h1,
 .has-h-1-font-size,
 .has-h1-font-size,
 :where(h1.wp-block-heading) {
-	@apply text-3xl md:text-4xl lg:text-5xl font-medium mb-6 !leading-tight;
+	@apply text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 !leading-tight;
 }
 
 .h2,
