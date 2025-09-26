@@ -2,7 +2,7 @@
 /**
  * Hooks/functions for managing the blog.
  *
- * @package cooper
+ * @package {{PACKAGE_NAME}}
  */
 
 /**

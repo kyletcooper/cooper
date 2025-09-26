@@ -5,4 +5,4 @@
  * @package cooper
  */
 
-the_ssg( 'navigation' );
+the_ssg( 'Navigation' );

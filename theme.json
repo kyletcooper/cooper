@@ -1,19 +1,74 @@
 {
 	"version": 2,
 	"settings": {
+		"border": {
+			"radius": false,
+			"color": false,
+			"style": false,
+			"width": false
+		},
+		"color": {
+			"background": false,
+			"custom": false,
+			"customDuotone": false,
+			"customGradient": false,
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [],
+			"gradients": [],
+			"link": false,
+			"text": false,
+			"palette": [
+				{
+					"color": "#f0f",
+					"name": "Primary",
+					"slug": "primary"
+				}
+			]
+		},
+		"dimensions": {
+			"minHeight": false
+		},
 		"layout": {
 			"contentSize": "80rem",
 			"wideSize": "100rem"
 		},
+		"lightbox": {
+			"enabled": false
+		},
+		"position": {
+			"sticky": false
+		},
+		"shadow": {
+			"defaultPresets": false
+		},
+		"spacing": {
+			"blockGap": null,
+			"margin": false,
+			"padding": false,
+			"customSpacingSize": false,
+			"spacingScale": {
+				"operator": "*",
+				"increment": 1.5,
+				"steps": 7,
+				"mediumStep": 1.5,
+				"unit": "rem"
+			},
+			"spacingSizes": [],
+			"units": ["rem"]
+		},
 		"typography": {
 			"customFontSize": false,
-			"lineHeight": false,
 			"dropCap": false,
 			"fontStyle": false,
 			"fontWeight": false,
 			"letterSpacing": false,
+			"lineHeight": false,
+			"textColumns": false,
 			"textDecoration": false,
 			"textTransform": false,
+			"writingMode": false,
 			"fontFamilies": [],
 			"fontSizes": [
 				{
@@ -68,15 +123,6 @@
 				}
 			]
 		},
-		"border": {
-			"radius": false,
-			"color": false,
-			"style": false,
-			"width": false
-		},
-		"color": {
-			"background": false
-		},
 		"blocks": {
 			"core/heading": {},
 			"core/button": {
@@ -84,9 +130,6 @@
 					"radius": false
 				}
 			}
-		},
-		"shadow": {
-			"defaultPresets": false
 		}
 	},
 	"styles": {

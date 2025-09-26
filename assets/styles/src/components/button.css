@@ -97,10 +97,3 @@
 	width: 100%;
 	justify-content: space-between;
 }
-
-.btn--orange,
-.is-style-orange,
-.is-style-orange > .wp-element-button {
-	--btn__fill: var(--colors-orange-500);
-	--btn__fill--hover: var(--colors-orange-600);
-}

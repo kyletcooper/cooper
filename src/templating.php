@@ -93,7 +93,7 @@ function the_ssg( string $name, ?array $props = null, array $attrs = array() ): 
 
 	printf( '<div %s>', $attrs ); // phpcs:ignore -- get_the_attrs escapes the data.
 
-	$file = trailingslashit( get_template_directory() ) . 'assets/scripts/dist/ssg/' . $name . '.html';
+	$file = trailingslashit( get_template_directory() ) . 'assets/scripts/dist/' . $name . '/ssg.html';
 	include $file;
 
 	echo '</div>';

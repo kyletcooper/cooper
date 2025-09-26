@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7406eb3cd9c1edace03172d3aaef004b",
+    "content-hash": "b0fab5f855de2b0d32a0d8fb163df991",
     "packages": [
         {
             "name": "adhocore/cli",
@@ -247,12 +247,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyletcooper/wp-blocks.git",
-                "reference": "672721d87138118fee81f40eb444f8de6188af82"
+                "reference": "af37460dddd0902110f22ebb006c9e11b14087ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyletcooper/wp-blocks/zipball/672721d87138118fee81f40eb444f8de6188af82",
-                "reference": "672721d87138118fee81f40eb444f8de6188af82",
+                "url": "https://api.github.com/repos/kyletcooper/wp-blocks/zipball/af37460dddd0902110f22ebb006c9e11b14087ee",
+                "reference": "af37460dddd0902110f22ebb006c9e11b14087ee",
                 "shasum": ""
             },
             "require": {
@@ -267,6 +267,7 @@
             "type": "library",
             "autoload": {
                 "files": [
+                    "src/acf.php",
                     "src/core.php",
                     "src/richtext.php",
                     "src/templating.php"
@@ -291,7 +292,7 @@
                 "issues": "https://github.com/kyletcooper/wp-blocks/issues",
                 "source": "https://github.com/kyletcooper/wp-blocks/tree/main"
             },
-            "time": "2025-06-11T11:56:17+00:00"
+            "time": "2025-08-24T19:47:56+00:00"
         }
     ],
     "packages-dev": [],
@@ -302,7 +303,7 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
